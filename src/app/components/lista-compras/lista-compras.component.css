@@ -1,0 +1,16 @@
+div {
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+a {
+  text-decoration: none;
+  background-color: ghostwhite;
+  padding: 2vh;
+  color: black;
+}
+
+.active {
+  background-color: gainsboro;
+  font-weight: bold;
+}

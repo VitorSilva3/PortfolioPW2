@@ -1,0 +1,6 @@
+<div class="posicao">
+  <div [ngStyle]="{'display': aceitarCookie == true ? 'none' : 'flex'}">
+    <h3>Aceita já os cookies!</h3>
+    <button #ctn class="btn" (click)="aceitarCookies(ctn)">Aceitar</button>
+  </div>
+</div>

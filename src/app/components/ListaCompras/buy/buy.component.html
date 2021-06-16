@@ -1,0 +1,4 @@
+<div *ngFor="let item of listaService.listaCompras">
+  <p [ngClass]="{'comprados' : item.carrinho == true}">{{item.nome}} {{item.preco}}€</p>
+  <button (click)="Comprar(item)">Comprar</button>
+</div>
