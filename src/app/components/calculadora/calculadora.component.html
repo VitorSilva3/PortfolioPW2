@@ -1,4 +1,103 @@
-<input type="number" [(ngModel)]="number1" (input)="calcula()">
-<input type="number" [(ngModel)]="number2" (input)="calcula()">
-<p>Resultado: {{number1 + number2}}</p>
-<p>Resultado (função): {{resultado}}</p>
+<div class="conteudo" [ngStyle]="{'left': posicao}">
+  <!-- Calculadora Noob -->
+  <div class="calNoob">
+    <input type="number" [(ngModel)]="number1" (input)="calcula()">
+    <input type="number" [(ngModel)]="number2" (input)="calcula()">
+    <p>Resultado: {{number1 + number2}}</p>
+    <p>Resultado (função): {{resultado}}</p>
+  </div>
+
+  <!-- Calculadora Pro -->
+  <div class="calPro">
+    <input type={{tipoInput}} (keypress)="trocar($event)">
+    <p>{{informacao}}</p>
+    <h3>{{resultado1}}</h3>
+  </div>
+
+  <!-- Calculadora God -->
+  <div class="calGod">
+    <div class="visor">
+      <p>{{finalEquation}}</p>
+    </div>
+    <div class="numeros">
+      <div class="col">
+        <div class="teclas" (click)="myFunction('c')">
+          <p>C</p>
+        </div>
+        <div class="teclas" (click)="myFunction('<')">
+          <p><</p>
+        </div>
+        <div class="teclas" (click)="myFunction('(')">
+          <p>(</p>
+        </div>
+        <div class="teclas" (click)="myFunction(')')">
+          <p>)</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="teclas" (click)="myFunction('7')">
+          <p>7</p>
+        </div>
+        <div class="teclas" (click)="myFunction('8')">
+          <p>8</p>
+        </div>
+        <div class="teclas" (click)="myFunction('9')">
+          <p>9</p>
+        </div>
+        <div class="teclas" (click)="myFunction('/')">
+          <p>/</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="teclas" (click)="myFunction('4')">
+          <p>4</p>
+        </div>
+        <div class="teclas" (click)="myFunction('5')">
+          <p>5</p>
+        </div>
+        <div class="teclas" (click)="myFunction('6')">
+          <p>6</p>
+        </div>
+        <div class="teclas" (click)="myFunction('*')">
+          <p>x</p>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="teclas" (click)="myFunction('1')">
+          <p>1</p>
+        </div>
+        <div class="teclas" (click)="myFunction('2')">
+          <p>2</p>
+        </div>
+        <div class="teclas" (click)="myFunction('3')">
+          <p>3</p>
+        </div>
+        <div class="teclas" (click)="myFunction('-')">
+          <p>-</p>
+        </div>
+
+      </div>
+      <div class="col">
+        <div class="teclas" (click)="myFunction('.')">
+          <p>.</p>
+        </div>
+        <div class="teclas" (click)="myFunction('0')">
+          <p>0</p>
+        </div>
+        <div class="teclas" (click)="solve()">
+          <p>=</p>
+        </div>
+        <div class="teclas" (click)="myFunction('+')">
+          <p>+</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="botoes">
+  <button (click)="mudaPosiEs()"> <- </button>
+  <button (click)="mudaPosiDi()"> -> </button>
+</div>
