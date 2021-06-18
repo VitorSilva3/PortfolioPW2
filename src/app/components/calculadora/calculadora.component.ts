@@ -12,49 +12,37 @@ export class CalculadoraComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  botEsDis = "Block";
+  botEsDis = "inline-block";
   botDiDis = "None";
   posicao = "44vw";
-  qualCal = 1;
+  nomeCal = "Noob";
 
   mudaPosiEs() {
-    /*if (this.qualCal == 1) {
-      this.posicao = "-20vw";
-      this.qualCal++;
-    }
-    else if (this.qualCal == 2) {
-      this.posicao = "-90vw";
-      this.qualCal++;
-    }*/
-
     if (this.posicao == "44vw") {
-      this.posicao = "-20vw";
+      this.posicao = "-22vw";
+      this.nomeCal = "Pro";
+      this.botDiDis = "inline-block";
     }
-    else if (this.posicao == "-20vw"){
-      this.posicao = "-90vw";
+    else if (this.posicao == "-22vw"){
+      this.posicao = "-89vw";
+      this.nomeCal = "God";
+      this.botEsDis = "none";
     }
-    console.log(this.posicao, this.qualCal);
+    console.log(this.posicao);
   }
 
   mudaPosiDi() {
-    /*if (this.qualCal == 3) {
-      this.posicao = "-20vw";
-      this.qualCal--;
-      this.botEsDis = "none";
+    if (this.posicao == "-89vw") {
+      this.posicao = "-22vw";
+      this.nomeCal = "Pro";
+      this.botEsDis = "inline-block";
     }
-    else if (this.qualCal == 2) {
+    else if (this.posicao == "-22vw"){
       this.posicao = "44vw";
+      this.nomeCal = "Noob";
       this.botDiDis = "none";
-      this.qualCal--;
-    }*/
-
-    if (this.posicao == "-90vw") {
-      this.posicao = "-20vw";
     }
-    else if (this.posicao == "-20vw"){
-      this.posicao = "44vw";
-    }
-    console.log(this.posicao, this.qualCal);
+    console.log(this.posicao);
   }
 
   // Calculadora Noob
