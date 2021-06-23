@@ -1,1 +1,5 @@
-<input [style.backgroundColor]="corBackground" (mouseenter)="changeColor()" (mouseleave)="changeColor()">
+<div>
+  <input type={{tipo}} [style.background-color]="cor" (mouseenter)='changeColor(cor = "red")'
+    (focus)='changeColor(cor = "pink")' (blur)='changeColor(cor = "grey")' (input)='changeColor(cor = "blue")'>
+  <input type="button" (focus)='mudar()' value="Alternar">
+</div>

@@ -1,5 +1,9 @@
-<div>
-  <a [routerLink]="['/ListaCompras/Add']" routerLinkActive="active">Add</a>
-  <a [routerLink]="['/ListaCompras/Buy']" routerLinkActive="active">Buy</a>
+<div class="principal">
+  <div class="menu">
+    <a [routerLink]="['/ListaCompras/Add']" routerLinkActive="active">Add</a>
+    <a [routerLink]="['/ListaCompras/Buy']" routerLinkActive="active">Buy</a>
+  </div>
+  <div class="rout">
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<router-outlet></router-outlet>

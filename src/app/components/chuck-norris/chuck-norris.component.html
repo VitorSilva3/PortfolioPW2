@@ -1,0 +1,13 @@
+<div class="principal">
+  <div class="pesquisa">
+    <button (click)="getJoke()">Get Joke</button>
+    <button (click)="getMoreJokes(valor.value)">Get More Joke</button>
+    <input type="text" #valor>
+  </div>
+  <div class="resultados">
+    <h1>{{piada}}</h1>
+    <div *ngFor="let item of piadas.result">
+      <h3>{{item.value}}</h3>
+    </div>
+  </div>
+</div>

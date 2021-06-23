@@ -9,14 +9,21 @@ export class EvAndRefComponent implements OnInit {
 
   constructor() { }
 
-  corBackground="red";
+  cor : string = "teal";
+  tipo : string = "text";
 
-  changeColor(){
-   // this.corBackground = "pink";
-
-    this.corBackground = this.corBackground == 'red' ? 'white' : 'red';
+  changeColor(corR:string){
+    this.cor = corR;
   }
 
+  mudar(){
+    if(this.tipo == "text"){
+        this.tipo = "password";
+    }
+    else{
+      this.tipo = "text";
+    }
+  }
   ngOnInit(): void {
   }
 

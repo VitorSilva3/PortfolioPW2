@@ -1,0 +1,38 @@
+.principal {
+  display: flex;
+  margin: 2vh;
+  height: 88vh;
+}
+.esquerda, .direita {
+  width: 48vw;
+  height: 88vh;
+  display: inline-block;
+}
+
+.esquerda {
+  width: 30vw;
+}
+
+.pesquisa {
+  height: 5vh;
+  text-align: center;
+}
+
+.pesquisa input {
+  margin-right: 2vh;
+}
+
+.resultados {
+  overflow-y: scroll;
+  height: 83vh;
+}
+
+.resultados div {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+

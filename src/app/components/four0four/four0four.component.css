@@ -1,4 +1,4 @@
-div {
+.fundo {
   background-image: url('https://wallpapercave.com/wp/wp2936294.gif');
   width: 100vw;
   height: 100vh;
@@ -6,6 +6,14 @@ div {
   margin: 0;
 }
 
+.des {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  padding-top: 30vh;
+}
+
 h1 {
-  margin: 0;
+  margin-bottom: 1vh;
 }

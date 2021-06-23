@@ -1,2 +1,7 @@
-<a [routerLink]="['/p-color', 'red']" routerLinkActive="router-link-active">IDK</a>
-<router-outlet></router-outlet>
+<div>
+  <input placeholder="Nome Cor" [(ngModel)]="cor">
+  <a [routerLink]="['/p-color', cor]" routerLinkActive="router-link-active">
+    <h3>Pintar</h3>
+  </a>
+  <router-outlet></router-outlet>
+</div>

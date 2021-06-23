@@ -1,0 +1,9 @@
+.comprados {
+  text-decoration: line-through;
+}
+
+p {
+  display: inline-block;
+  margin-right: 1vh;
+  margin-bottom: 3vh;
+}

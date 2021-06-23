@@ -1,0 +1,21 @@
+.principal {
+  margin: 2vh;
+}
+
+.pesquisa button {
+  margin-right: 1vw;
+  margin-bottom: 3vh;
+}
+
+.resultados {
+  overflow-y: scroll;
+  height: 77vh;
+}
+
+.resultados div {
+  margin-top: 2vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}

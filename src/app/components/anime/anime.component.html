@@ -1,0 +1,18 @@
+<div class="principal">
+  <div class="esquerda">
+    <div class="pesquisa">
+      <input #anime>
+      <button (click)="pesquisar(anime.value)">Pesquisar</button>
+    </div>
+    <div class="resultados">
+      <div *ngFor="let item of animes">
+        <a [routerLink]="['/Anime', item.id]">
+          <img src={{item.imagem}}>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="direita">
+    <router-outlet></router-outlet>
+  </div>
+</div>

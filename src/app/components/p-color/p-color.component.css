@@ -1,0 +1,13 @@
+div {
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #e6e6e6;
+  margin-left: 1vh;
+}

@@ -3,13 +3,13 @@
   position: relative;
   width: 150vw;
   height: 50vh;
-  top: 0vh;
+  top: 5vh;
   transition: 2s;
 }
 
 .botoes {
   position: relative;
-  top: 15vh;
+  bottom: -17vh;
   left: 40vw;
   width: 20vw;
   text-align: center;
